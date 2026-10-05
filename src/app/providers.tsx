@@ -23,7 +23,7 @@ export function AppProviders({ children }: { children: ReactNode }) {
 
   return (
     <AppErrorBoundary>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <QueryClientProvider client={queryClient}>
           <AuthzProvider>{children}</AuthzProvider>
         </QueryClientProvider>
