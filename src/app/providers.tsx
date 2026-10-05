@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { type ReactNode, useState } from 'react';
 import { AuthzProvider } from '../features/authz';
 import { AppErrorBoundary } from './ErrorBoundary';
+import { ROUTER_BASENAME } from '../shared/env';
 
 /**
  * Root composition of cross-cutting providers. Kept deliberately thin and
@@ -23,7 +24,7 @@ export function AppProviders({ children }: { children: ReactNode }) {
 
   return (
     <AppErrorBoundary>
-      <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <BrowserRouter basename={ROUTER_BASENAME}>
         <QueryClientProvider client={queryClient}>
           <AuthzProvider>{children}</AuthzProvider>
         </QueryClientProvider>

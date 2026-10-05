@@ -36,3 +36,4 @@ if (!parsed.success) {
 export const env = parsed.data;
 
 export type AppEnv = typeof env;
+export const ROUTER_BASENAME = import.meta.env.BASE_URL.replace(/\/$/, '') || '/';
