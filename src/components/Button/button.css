@@ -1,0 +1,56 @@
+.op-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font: inherit;
+  font-weight: 600;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 120ms ease, border-color 120ms ease;
+}
+
+.op-button:focus-visible {
+  outline: 2px solid #1a5fb4;
+  outline-offset: 2px;
+}
+
+.op-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.op-button--primary {
+  background: #1a5fb4;
+  color: #fff;
+}
+.op-button--primary:hover:not(:disabled) {
+  background: #154c91;
+}
+
+.op-button--secondary {
+  background: #eef1f5;
+  color: #1b1f24;
+  border-color: #d3d8e0;
+}
+.op-button--secondary:hover:not(:disabled) {
+  background: #e2e6ed;
+}
+
+.op-button--danger {
+  background: #c01c28;
+  color: #fff;
+}
+.op-button--danger:hover:not(:disabled) {
+  background: #9a1620;
+}
+
+.op-button--ghost {
+  background: transparent;
+  color: #1b1f24;
+}
+.op-button--ghost:hover:not(:disabled) {
+  background: #f0f1f3;
+}

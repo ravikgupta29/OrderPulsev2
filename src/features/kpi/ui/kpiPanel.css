@@ -1,0 +1,63 @@
+.op-kpi {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.op-kpi__stats {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.op-kpi__stat-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.op-kpi__stat-label {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.op-kpi__breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.op-kpi__bar-row {
+  display: grid;
+  grid-template-columns: 90px 1fr 32px;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.op-kpi__bar-track {
+  background: #f1f3f5;
+  border-radius: 4px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.op-kpi__bar-fill {
+  height: 100%;
+  background: #1a5fb4;
+  transition: width 300ms ease;
+}
+.op-kpi__bar-fill--on_hold {
+  background: #d08700;
+}
+.op-kpi__bar-fill--cancelled {
+  background: #c01c28;
+}
+.op-kpi__bar-fill--delivered {
+  background: #2a9d3e;
+}

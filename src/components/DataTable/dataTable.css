@@ -1,0 +1,73 @@
+.op-datatable {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.op-datatable__header-row {
+  display: flex;
+  background: #f8f9fb;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.op-datatable__cell {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.op-datatable__cell--header {
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #475569;
+}
+
+.op-datatable__sort-button {
+  background: none;
+  border: none;
+  font: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0;
+}
+.op-datatable__sort-button:focus-visible {
+  outline: 2px solid #1a5fb4;
+}
+
+.op-datatable__scroll {
+  height: 600px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.op-datatable__row {
+  display: flex;
+  border-bottom: 1px solid #f0f1f3;
+  cursor: pointer;
+}
+.op-datatable__row:hover {
+  background: #f8fafc;
+}
+.op-datatable__row:focus-visible {
+  outline: 2px solid #1a5fb4;
+  outline-offset: -2px;
+}
+.op-datatable__row--selected {
+  background: #e8f1fb;
+}

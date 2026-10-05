@@ -1,0 +1,44 @@
+.op-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  font-size: 0.9rem;
+}
+
+.op-banner__title {
+  font-weight: 700;
+  margin: 0;
+}
+
+.op-banner__description {
+  margin: 0.1rem 0 0;
+  opacity: 0.85;
+}
+
+.op-banner--info {
+  background: #e8f1fb;
+  border-color: #b9d4f3;
+  color: #0b3a6b;
+}
+
+.op-banner--success {
+  background: #e6f6ea;
+  border-color: #b7e3c3;
+  color: #134d24;
+}
+
+.op-banner--warning {
+  background: #fff6e0;
+  border-color: #f0d98a;
+  color: #654a04;
+}
+
+.op-banner--danger {
+  background: #fdeaea;
+  border-color: #f3b9b9;
+  color: #6b0b0b;
+}
