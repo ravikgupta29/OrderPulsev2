@@ -1,1 +1,0 @@
-import{m as e,L as n}from"./index-BTLFChU4.js";function t(){return e.jsxs("div",{style:{padding:"3rem",textAlign:"center"},children:[e.jsx("h1",{children:"Page not found"}),e.jsx("p",{children:e.jsx(n,{to:"/",children:"Back to Orders"})})]})}export{t as NotFoundPage};
