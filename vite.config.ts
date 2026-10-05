@@ -4,7 +4,8 @@ import { defineConfig } from 'vite';
 
 // https://vite.dev/config/
 // `mode` is driven by --mode int|val|prod and loads the matching .env.<mode> file.
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
+  base: mode === 'pages' ? '/OrderPulsev2/' : '/',
   plugins: [react()],
   test: {
     environment: 'jsdom',
@@ -17,4 +18,4 @@ export default defineConfig({
     },
     exclude: ['e2e/**', 'node_modules/**'],
   },
-});
+}));
